@@ -80,7 +80,7 @@ html, body {
 }
 
 .text-gold {
-  color: #cc942c;
+  color: #EEB345;
 }
 
 .rfbtn {
@@ -128,6 +128,64 @@ html, body {
     width: 500px !important; } }
 .text-rampver {
   color: #256141; }
+
+
+  .shimmer-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.shimmer-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    pointer-events: none;
+    animation: shimmerAnimation 2s infinite linear;
+}
+.shimmer-border-gold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    pointer-events: none;
+    animation: shimmerAnimationGold 2s infinite linear;
+}
+
+.button-text {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes shimmerAnimation {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #EEB345;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+@keyframes shimmerAnimationGold {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffffff;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
 
 
 .goldHeader {
